@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <title>Портфоліо</title>
 </head>
 <body>
     <!--Page header-->
-    <header>
-        <a href="#">WebStudio</a>
+    <header class="menu">
+        <a href="#" class="logo"><span class="first-part-logo">Web</span>Studio</a>
         <nav>
             <!--Links to other pages of the current page-->
-            <ul>
+            <ul class="navigation">
                 <li>
-                    <a href="https://juliamaidan.github.io/goit-markup-hw-01/">Студія</a>
+                    <a href="file:///Users/julia.maidan/Documents/GitHub/goit-markup-hw-02/index.html">Студія</a>
                 </li>
                 <li>
-                    <a href="#">Портфоліо</a>
+                    <a href="file:///Users/julia.maidan/Documents/GitHub/goit-markup-hw-02/portfolio.html">Портфоліо</a>
                 </li>
                 <li>
                     <a href="#">Контакти</a>
@@ -25,7 +28,7 @@
             </ul>
         </nav>
         <!--Contacts-->
-        <ul>
+        <ul class="contacts">
             <li>
                 <a href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
@@ -55,9 +58,7 @@
                     <button type="button">Маркетинг</button>
                 </li>
             </ul>
-        </section>
         <!--Projects-->
-        <section>
             <ul>
                 <li>
                     <img src="images/project1.jpg" alt="Project 1" width="370" height="294"/>
@@ -108,12 +109,22 @@
         </section>
     </main>
     <!--Footer-->
-    <footer>
-        <a href="#">WebStudio</a>
+    <footer class="footer">
+        <a href="#" class="footer-logo"><span class="first-part-logo">Web</span>Studio</a>
         <address>
-            м. Київ, пр-т Лесі Українки, 26<br />
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a><br />
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <ul>
+                <li>
+                    <a class="location"
+                        href="https://www.google.com/maps/place/бульвар+Лесі+Українки,+26,+Київ,+02000/@50.4265794,30.5208762,14z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858">м.
+                        Київ, пр-т Лесі Українки, 26</a>
+                </li>
+                <li>
+                    <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li>
+                    <a class="phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+            </ul>
         </address>
     </footer>
 </body>
