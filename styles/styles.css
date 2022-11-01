@@ -1,10 +1,17 @@
+:root{
+    --main-color: #212121;
+    --active-color: #2196F3;
+    --gray: #757575;
+    --background-color: #2F303A;
+    --white: #fff;
+}
 body{
     font-family: 'Roboto';
-    color: #212121;
+    color: var(--main-color);
 }
 .logo, .footer-logo{
     text-decoration: none;
-    color: #212121;
+    color: var(--main-color);
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -12,10 +19,10 @@ body{
     letter-spacing: 0.03em;
 }
 .first-part-logo {
-    color: #2196F3;
+    color: var(--active-color);
 }
 .footer-logo{
-    color: #fff;
+    color: var(--white);
 }
 
 .navigation a, .contacts a{
@@ -24,19 +31,20 @@ body{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--main-color);
 }
 .contacts a{
-    color: #757575;
+    color: var(--gray);
 }
 .navigation a:hover, .contacts a:hover{
-    color: #2196F3;
+    color: var(--active-color);
 }
+
 .cap{
-    background-color: #2F303A;
+    background-color: var(--background-color);
 }
 .main-caption{
-    color: #FFFFFF;
+    color: var(--white);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -48,8 +56,8 @@ body{
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--white);
+    background-color: var(--active-color);
     cursor: pointer;
 }
 .item{
@@ -60,7 +68,7 @@ body{
 .item-description{
     font-size: 14px;
     line-height: 1.71;
-    color: #757575;
+    color: var(--gray);
     letter-spacing: 0.03em;
 }
 .caption{
@@ -77,21 +85,21 @@ body{
 .position{
     line-height: 1.187;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--gray);
 }
 .location, .mail, .phone{
     text-decoration: none;
     font-style: normal;
-    color: #ffffff;
+    color: var(--white);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 .mail, .phone{
-    color: #757575;
+    color: var(--gray);
 }
 .mail:hover, .phone:hover {
-    color: #2196F3;
+    color: var(--active-color);
 }
 .filters-button button{
     font-weight: 500;
@@ -102,8 +110,8 @@ body{
     cursor: pointer;
 }
 .filters-button button:hover {
-    background-color: #2196F3;
-    color: #ffffff;
+    background-color: var(--active-color);
+    color: var(--white);
 }
 .project-title{
     font-size: 18px;
@@ -113,10 +121,10 @@ body{
 .project-description{
     line-height: 1.875;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--gray);
 }
 .footer{
-    background-color: #2F303A;
+    background-color: var(--background-color);
 }
 
 
