@@ -13,6 +13,7 @@ body {
     font-family: 'Roboto', 'sans-serif';
     color: var(--main-color);
     width: 1600px;
+    margin: 0 auto;
 }
 
 .container {
@@ -90,12 +91,11 @@ p {
 }
 
 /*Navigation*/
-.header-nav-list,
-.header-contacts-list {
+.header-nav-list, .header-contacts-list{
     gap: 50px;
 }
-.header-nav-list{
-    margin-right: 340px;
+.header-nav-list {
+    margin-right: 338px;
 }
 
 .header-nav-link {
@@ -341,5 +341,3 @@ p {
     margin-left: 24px;
     margin-bottom: 20px;
 }
-
-
