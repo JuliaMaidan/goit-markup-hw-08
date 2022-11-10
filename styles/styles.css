@@ -90,13 +90,12 @@ p {
 }
 
 /*Navigation*/
-.header-nav-list {
-    margin-right: 340px;
-}
-
 .header-nav-list,
 .header-contacts-list {
     gap: 50px;
+}
+.header-nav-list{
+    margin-right: 340px;
 }
 
 .header-nav-link {
@@ -116,10 +115,6 @@ p {
 }
 
 /*Contacts*/
-.header-contacts-list {
-    justify-content: flex-end;
-}
-
 .header-contacts-link {
     font-weight: 500;
     font-size: 14px;
