@@ -12,7 +12,6 @@
 body {
     font-family: 'Roboto', 'sans-serif';
     color: var(--main-color);
-    width: 1600px;
     margin: 0 auto;
 }
 
@@ -94,9 +93,6 @@ p {
 .header-nav-list, .header-contacts-list{
     gap: 50px;
 }
-.header-nav-list {
-    margin-right: 340px;
-}
 
 .header-nav-link {
     font-weight: 500;
@@ -115,6 +111,9 @@ p {
 }
 
 /*Contacts*/
+.header-contacts-list {
+    margin-left: auto;
+}
 .header-contacts-link {
     font-weight: 500;
     font-size: 14px;
@@ -331,12 +330,17 @@ p {
 
 .projects-list-item {
     flex-basis: 370px;
-    border: 1px solid #EEEEEE;
     width: calc((100% - 2 * 30px) / 3);
 }
 
 .projects-list-img {
-    margin-bottom: 20px;
+    display: block;
+}
+
+.project-descr{
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .projects-list-title {
@@ -345,6 +349,7 @@ p {
     letter-spacing: 0.06em;
     margin-bottom: 4px;
     margin-left: 24px;
+    padding-top: 20px;
 }
 
 .projects-list-description {
