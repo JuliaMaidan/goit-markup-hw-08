@@ -6,6 +6,7 @@
     --background-color: #2F303A;
     --white: #fff;
     --light-background: #F5F4FA;
+    --icons-clr: #AFB1B8;
 }
 
 /*Global styles*/
@@ -138,9 +139,10 @@ p {
 /*Page content*/
 /*Hero section*/
 .hero {
-    background-color: var(--background-color);
+    background-color: #C4C4C4;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-bckg.jpg');
 }
 
 .hero-caption {
@@ -202,7 +204,14 @@ p {
     max-width: 270px;
 }
 
-.feature-icon{
+.ficon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--light-background);
+    border-radius: 4px;
     margin-bottom: 30px;
 }
 
@@ -268,19 +277,69 @@ p {
     margin-bottom: 16px;
 }
 
-.socials-icon{
-    fill: #188CE8;
-}
-.social-icons-list{
+.social-icons-list {
     justify-content: center;
     gap: 10px;
     margin-bottom: 30px;
+}
+
+.socials-icon{
+    fill: currentColor;
+}
+
+.social-icons-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--icons-clr);
+    background-color: var(--white);
+}
+
+.social-icons-link:hover, .social-icons-link:focus{
+    color: var(--white);
+    background-color: var(--active-color);
+}
+
+/*Clients*/
+.clients{
+    padding: 94px 0;
+}
+
+.clients-list{
+    gap: 30px;
+}
+
+.client-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    color: var(--icons-clr);
+    border: 1px solid var(--icons-clr);
+    border-radius: 4px;
+}
+
+.client-icon {
+    fill: currentColor;
+}
+
+.client-link:hover, .client-link:focus{
+    color: var(--active-color);
+    border: 1px solid var(--active-color);
 }
 
 /*Footer*/
 .footer {
     background-color: var(--background-color);
     padding: 60px 0;
+}
+.footer-box{
+    display: flex;
+    align-items: center;
 }
 
 .footer-logo {
@@ -314,6 +373,26 @@ p {
 .phone {
     opacity: 60%;
 }
+
+.footer-socials{
+    margin-left: 70px;
+}
+
+.footer-subtitle{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-icon-link{
+    color: var(--white);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 
 /*Portfolio html*/
 /*Filters*/
