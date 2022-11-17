@@ -570,7 +570,6 @@ p {
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 20;
     transition: opacity var(--standart-trans), visibility var(--standart-trans);
-
 }
 
 .backdrop.is-hidden{
