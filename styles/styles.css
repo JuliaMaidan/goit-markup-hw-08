@@ -69,14 +69,10 @@ p {
 
 /*Header*/
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
-    z-index: 10;
 }
 
 .header-box {
@@ -160,13 +156,13 @@ p {
 }
 
 .header-icon{
+    transition: fill var(--standart-trans);
     fill: currentColor;
 }
 
 /*Page content*/
 /*Hero section*/
 .hero {
-    margin-top: 80px;
     background-color: #C4C4C4;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -334,6 +330,7 @@ p {
 }
 
 .socials-icon{
+    transition: fill var(--standart-trans);
     fill: currentColor;
 }
 
@@ -376,6 +373,7 @@ p {
 }
 
 .client-icon {
+    transition: fill var(--standart-trans);
     fill: currentColor;
 }
 
@@ -391,7 +389,7 @@ p {
 }
 .footer-box{
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .footer-logo {
