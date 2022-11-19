@@ -63,7 +63,7 @@ p {
     margin: 0;
 }
 
-/*Header*/
+/*Header*
 .header {
     width: 100%;
     padding-top: 24px;
@@ -96,7 +96,7 @@ p {
     color: var(--active-color);
 }
 
-/*Navigation*/
+/*Navigation*
 .nav__list, .header-contacts__list{
     gap: 50px;
 }
@@ -134,7 +134,7 @@ p {
     color: var(--active-color);
 }
 
-/*Contacts*/
+/*Contacts*
 .header-contacts__list {
     margin-left: auto;
 }
@@ -157,7 +157,7 @@ p {
 }
 
 /*Page content*/
-/*Hero section*/
+/*Hero section*
 .hero {
     background-color: #C4C4C4;
     padding-top: 200px;
@@ -199,7 +199,7 @@ p {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/*Features*/
+/*Features*
 .features {
     padding: 94px 0;
 }
@@ -251,7 +251,7 @@ p {
     color: var(--gray);
 }
 
-/*Activity*/
+/*Activity*
 .activity {
     padding-bottom: 94px;
 }
@@ -281,7 +281,7 @@ p {
     width: 100%;
 }
 
-/*Team*/
+/*Team*
 .team {
     background-color: var(--light-background);
     padding: 94px 0;
@@ -347,7 +347,7 @@ p {
     background-color: var(--active-color);
 }
 
-/*Clients*/
+/*Clients*
 .clients{
     padding: 94px 0;
 }
@@ -378,7 +378,7 @@ p {
     border: 1px solid var(--active-color);
 }
 
-/*Footer*/
+/*Footer*
 .footer {
     background-color: var(--background-color);
     padding: 60px 0;
@@ -511,7 +511,7 @@ p {
 
 
 /*Portfolio html*/
-/*Filters*/
+/*Filters*
 .filters {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -541,7 +541,7 @@ p {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/*Projects*/
+/*Projects*
 .projects__list {
     gap: 30px;
 }
@@ -614,7 +614,7 @@ p {
     transform: translateY(0);
 }
 
-/*Modal window*/
+/*Modal window*
 .backdrop{
     position: fixed;
     top: 0;

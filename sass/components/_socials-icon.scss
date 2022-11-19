@@ -1,0 +1,28 @@
+.social-icons__list {
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.social__icon {
+    transition: fill var(--standart-trans);
+    fill: currentColor;
+}
+
+.social-icons__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--icons-clr);
+    background-color: var(--white);
+    transition: color var(--standart-trans), background var(--standart-trans);
+}
+
+.social-icons__link:hover,
+.social-icons__link:focus {
+    color: var(--white);
+    background-color: var(--active-color);
+}
