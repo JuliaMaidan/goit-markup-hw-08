@@ -1,72 +1,67 @@
 .footer {
-    background-color: var(--background-color);
+    background-color: $background-color;
     padding: 60px 0;
+
+    &-box {
+        @extend %container;
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__logo {
+        color: $white;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: calc(31 / 26);
+        letter-spacing: 0.03em;
+        transition: color $standart-trans;
+
+        &:hover, &:focus {
+            color: $active-color;
+        }
+    }
+
+    &-contacts__list {
+        display: block;
+        margin-top: 20px;
+    }
+
+    &-contacts__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &-contacts__link {
+        font-style: normal;
+        font-size: 14px;
+        line-height: calc(24 / 14);
+        letter-spacing: 0.03em;
+        color: $white;
+        @extend %mail_phone;
+        transition: color $standart-trans;
+
+        &:hover, &:focus {
+            color: $active-color;
+        }
+    }
+
+    &__socials {
+        margin-left: 70px;
+    }
+
+    &__subtitle {
+        color: $white;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    
+    &-icon__link {
+        fill: $white;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
 }
 
-.footer-box {
-    display: flex;
-    align-items: baseline;
-}
-
-.footer__logo {
-    color: var(--white);
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
-    letter-spacing: 0.03em;
-    transition: color var(--standart-trans);
-}
-
-.footer__logo:hover,
-.footer__logo:focus {
-    color: var(--active-color);
-}
-
-.footer-contacts__list {
-    display: block;
-    margin-top: 20px;
-}
-
-.footer-contacts__item:not(:last-child) {
-    margin-bottom: 9px;
-
-}
-
-.footer-contacts__link {
-    font-style: normal;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: var(--white);
-    transition: color var(--standart-trans);
-}
-
-.footer-contacts__link:hover,
-.footer-contacts__link:focus {
-    color: var(--active-color);
-}
-
-.mail,
-.phone {
-    opacity: 60%;
-}
-
-.footer__socials {
-    margin-left: 70px;
-}
-
-.footer__subtitle {
-    color: var(--white);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.footer-icon__link {
-    color: var(--white);
-    background-color: rgba(255, 255, 255, 0.1);
-}

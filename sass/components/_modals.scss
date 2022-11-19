@@ -5,15 +5,15 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 20;
-    transition: opacity var(--standart-trans), visibility var(--standart-trans);
+    transition: opacity $standart-trans, visibility $standart-trans;
     animation: zoom 1s linear forwards;
-}
 
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    animation: zoom 1s linear forwards;
+    &.is-hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            animation: zoom 1s linear forwards;
+        }
 }
 
 .modal {
@@ -23,58 +23,119 @@
     transform: translate(-50%, -50%);
     width: 528px;
     min-height: 581px;
-    background-color: var(--white);
+    background-color: $white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    &__icon {
+        fill: $main-color;
+        transition: fill $standart-trans;
+    
+        &:hover, &:focus {
+            fill: var(--active-color);
+            transition: fill $standart-trans;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    &__form {
+        padding: 40px;
+    }
+
+    &__title {
+        display: block;
+        font-size: 20px;
+        line-height: calc(23 / 20);
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $main-color;
+        margin-bottom: 12px;
+    }
+
 }
 
-.modal__icon {
-    fill: var(--main-color);
-    transition: fill var(--standart-trans);
-}
-
-.modal__icon:hover,
-.modal__icon:focus {
-    fill: var(--active-color);
-    transition: fill var(--standart-trans);
-}
-
-.modal__btn {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    padding: 0;
+.accept {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
+    gap: 7px;
 
-.modal__form {
-    padding: 40px;
+    &__checkbox {
+        appearance: none;
+        width: 16px;
+        height: 15px;
+        border: 1px solid $main-color;
+        border-radius: 2px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 0;
+        transition: background $standart-trans;
+    
+        &:checked {
+            background-color: $active-color;
+            border-color: transparent;
+            background-size: 11px 8px;
+            background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
+        }
+    }
 
-}
+    &__text {
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+        line-height: calc(24 / 14);
+        letter-spacing: 0.03em;
+        color: $gray;
+    }
 
-.modal__title {
-    display: block;
-    font-size: 20px;
-    line-height: calc(23 / 20);
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
-    margin-bottom: 12px;
+    &__link {
+        text-decoration: underline;
+        color: $active-color;
+    }
+
+    &__btn {
+        display: block;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(30 / 16);
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: $white;
+        margin-top: 30px;
+        width: 200px;
+        height: 50px;
+        background: $active-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        transition: background $standart-trans;
+
+        &:hover, &:focus {
+            background: #188CE8;
+        }
+    }
 }
 
 .signup__form:focus-within .field__input:focus {
-    border: 1px solid var(--active-color);
+    border: 1px solid $active-color;
 }
 
 .field__input:focus+.signup__icon {
-    fill: var(--active-color);
+    fill: $active-color;
 }
 
 .signup__label {
@@ -83,7 +144,7 @@
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
-    color: var(--gray);
+    color: $gray;
     margin-bottom: 4px;
 }
 
@@ -99,7 +160,7 @@
     border-radius: 4px;
     padding-left: 42px;
     outline: transparent;
-    transition: border var(--standart-trans);
+    transition: border $standart-trans;
 }
 
 .textarea__input {
@@ -117,73 +178,10 @@
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-    fill: var(--main-color);
-    transition: fill var(--standart-trans);
+    fill: $main-color;
+    transition: fill $standart-trans;
 }
 
 .field__input:focus+.signup__icon:focus {
-    fill: var(--active-color);
-}
-
-.accept {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-}
-
-.accept__checkbox {
-    appearance: none;
-    width: 16px;
-    height: 15px;
-    border: 1px solid var(--main-color);
-    border-radius: 2px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 0;
-    transition: background var(--standart-trans);
-}
-
-.accept__checkbox:checked {
-    background-color: var(--active-color);
-    border-color: transparent;
-    background-size: 11px 8px;
-    background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
-}
-
-.accept__text {
-    align-items: center;
-    text-align: center;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: var(--gray);
-}
-
-.accept__link {
-    text-decoration: underline;
-    color: var(--active-color);
-}
-
-.accept__btn {
-    display: block;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--white);
-    margin-top: 30px;
-    width: 200px;
-    height: 50px;
-    background: var(--active-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    transition: background var(--standart-trans);
-}
-
-.accept__btn:hover,
-.accept__btn:focus {
-    background: #188CE8;
+    fill: $active-color;
 }

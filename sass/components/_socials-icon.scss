@@ -4,8 +4,8 @@
     margin-bottom: 30px;
 }
 
-.social__icon {
-    transition: fill var(--standart-trans);
+.social__icons {
+    transition: fill $standart-trans;
     fill: currentColor;
 }
 
@@ -16,13 +16,12 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    color: var(--icons-clr);
-    background-color: var(--white);
-    transition: color var(--standart-trans), background var(--standart-trans);
-}
+    color: $icons-clr;
+    background-color: $white;
+    transition: color $standart-trans, background $standart-trans;
 
-.social-icons__link:hover,
-.social-icons__link:focus {
-    color: var(--white);
-    background-color: var(--active-color);
+    &:hover, &:focus {
+        color: $white;
+        background-color: $active-color;
+    }
 }

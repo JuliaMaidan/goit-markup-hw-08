@@ -1,0 +1,31 @@
+.filters {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &-box {
+        @extend %container;
+    }
+
+    &__list {
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 50px;
+    }
+
+    &__btn {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(26 /16);
+        letter-spacing: 0.03em;
+        background-color: $light-background;
+        height: 38px;
+        width: 125px;
+        transition: color $standart-trans, background $standart-trans, box-shadow $standart-trans;
+    
+        &:hover, &:focus {
+            color: $white;
+            background-color: $active-color;
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+    }
+}

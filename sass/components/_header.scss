@@ -3,50 +3,56 @@
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
-}
 
-.header__box {
-    display: flex;
-    align-items: center;
-}
+    &__box {
+        @extend %container;
+        display: flex;
+        align-items: center;
+    }
 
-.header__logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
-    letter-spacing: 0.03em;
-    margin-right: 93px;
-    transition: color var(--standart-trans);
-}
+    &__logo {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: calc(31 / 26);
+        letter-spacing: 0.03em;
+        margin-right: 93px;
+        transition: color $standart-trans;
 
-.header__logo:hover,
-.header__logo:focus {
-    color: var(--active-color);
-    transition: color var(--standart-trans);
+        &:hover, &:focus {
+            color: $active-color;
+            transition: color $standart-trans;
+        }
+    }
+
+    &-contacts__list {
+        margin-left: auto;
+        gap: 50px;
+    }
+
+    &-contacts__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        letter-spacing: 0.02em;
+        color: $gray;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        transition: color $standart-trans;
+
+        &:hover, &:focus {
+            color: $active-color;
+        }
+    }
+
+    &__icon {
+        transition: fill $standart-trans;
+        fill: currentColor;
+    }
 }
 
 .first-part__logo {
-    color: var(--active-color);
+    color: $active-color;
 }
 
-.header-contacts__list {
-    margin-left: auto;
-}
-
-.header-contacts__link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
-    color: var(--gray);
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    transition: color var(--standart-trans);
-}
-
-.header__icon {
-    transition: fill var(--standart-trans);
-    fill: currentColor;
-}

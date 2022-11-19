@@ -1,13 +1,9 @@
 //base styles
 @import './base/base';
-@import './base/common';
 @import './base/reset';
 
 
 //component styles
-@import './components/button';
-@import './components/container';
-@import './components/logo';
 @import './components/header';
 @import './components/navigation';
 @import './components/hero';
@@ -19,7 +15,7 @@
 @import './components/footer';
 @import './components/subscribe';
 @import './components/modals';
-@import './components/filters-btn';
+@import './components/filters';
 @import './components/projects';
 
 
@@ -28,3 +24,4 @@
 //utils styles
 @import './utilis/placeholders';
 @import './utilis/variables';
+
