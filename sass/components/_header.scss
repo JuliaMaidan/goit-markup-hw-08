@@ -19,18 +19,19 @@
         margin-right: 93px;
         transition: color $standart-trans;
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             color: $active-color;
             transition: color $standart-trans;
         }
     }
+}
 
-    &-contacts__list {
-        margin-left: auto;
-        gap: 50px;
-    }
+.header-contacts {
+    margin-left: auto;
+    gap: 50px;
 
-    &-contacts__link {
+    &__link {
         font-weight: 500;
         font-size: 14px;
         line-height: calc(16 / 14);
@@ -41,7 +42,8 @@
         align-items: center;
         transition: color $standart-trans;
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             color: $active-color;
         }
     }
@@ -51,6 +53,7 @@
         fill: currentColor;
     }
 }
+
 
 .first-part__logo {
     color: $active-color;
