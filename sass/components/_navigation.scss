@@ -16,7 +16,7 @@
         &--current {
             color: $active-color;
         }
-    
+
         &--current::after {
             display: block;
             position: absolute;
@@ -28,7 +28,8 @@
             border-radius: 2px;
         }
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             color: $active-color;
         }
     }
