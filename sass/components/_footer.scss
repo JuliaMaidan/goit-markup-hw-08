@@ -22,29 +22,6 @@
         }
     }
 
-    &-contacts__list {
-        display: block;
-        margin-top: 20px;
-    }
-
-    &-contacts__item:not(:last-child) {
-        margin-bottom: 9px;
-    }
-
-    &-contacts__link {
-        font-style: normal;
-        font-size: 14px;
-        line-height: calc(24 / 14);
-        letter-spacing: 0.03em;
-        color: $white;
-        @extend %mail_phone;
-        transition: color $standart-trans;
-
-        &:hover, &:focus {
-            color: $active-color;
-        }
-    }
-
     &__socials {
         margin-left: 70px;
     }
@@ -62,6 +39,30 @@
     &-icon__link {
         fill: $white;
         background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.footer-contacts {
+    display: block;
+    margin-top: 20px;
+
+    &__item:not(:last-child) {
+            margin-bottom: 9px;
+        }
+    
+    &__link {
+        font-style: normal;
+        font-size: 14px;
+        line-height: calc(24 / 14);
+        letter-spacing: 0.03em;
+        color: $white;
+        @extend %mail_phone;
+        transition: color $standart-trans;
+
+        &:hover,
+        &:focus {
+            color: $active-color;
+        }
     }
 }
 
