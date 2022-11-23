@@ -1,4 +1,12 @@
 .team {
+    &-box {
+        @extend %container;
+    }
+
+    &__caption {
+        @extend %hidden_cap;
+    }
+
     background-color: $light-background;
     padding: 94px 0;
 

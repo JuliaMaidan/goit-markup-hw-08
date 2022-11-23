@@ -1,5 +1,10 @@
 .clients {
-    padding: 94px 0;
+    padding: 60px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
+
 
     &-box {
         @extend %container;
@@ -17,12 +22,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 170px;
+        width: 210px;
         height: 92px;
         color: $icons-clr;
         border: 1px solid $icons-clr;
         border-radius: 4px;
         transition: color $standart-trans, border $standart-trans;
+
+        @media screen and (min-width: 768px) {
+            width: 226px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 170px;
+        }
 
         &:hover, &:focus {
             color: $active-color;

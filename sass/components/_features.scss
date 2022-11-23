@@ -1,5 +1,11 @@
 .features {
-    padding: 94px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     &-box {
         @extend %container;
@@ -11,10 +17,24 @@
 }
 
 .features-list {
-    gap: 30px;
+    @media screen and (min-width: 768px) {
+        gap: 30px;
+    }
 
     &__item {
-        max-width: 270px;
+        max-width: 450px;
+
+        &:not(last-child) {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: 768px) {
+            max-width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            max-width: 270px;
+        }
     }
 
     &__title {
@@ -36,10 +56,21 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 270px;
+        width: 450px;
         height: 120px;
         background-color: $light-background;
         border-radius: 4px;
         margin-bottom: 30px;
+
+        @media screen and (min-width: 768px) {
+            max-width: 354px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            max-width: 270px;
+        }
+
     }
+
+    
 }

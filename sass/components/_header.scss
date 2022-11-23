@@ -1,8 +1,18 @@
 .header {
     width: 100%;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-bottom: 1px solid #ECECEC;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
 
     &__box {
         @extend %container;
@@ -16,8 +26,15 @@
         font-size: 26px;
         line-height: calc(31 / 26);
         letter-spacing: 0.03em;
-        margin-right: 93px;
         transition: color $standart-trans;
+
+        @media screen and (min-width: 768px) {
+            margin-right: 87px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+        }
 
         &:hover,
         &:focus {
@@ -28,8 +45,19 @@
 }
 
 .header-contacts {
-    margin-left: auto;
-    gap: 50px;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        gap: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        gap: 50px;
+    }
 
     &__link {
         font-weight: 500;
