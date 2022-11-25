@@ -1,15 +1,29 @@
 .filters {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    
 
     &-box {
         @extend %container;
     }
 
     &__list {
-        justify-content: center;
         gap: 8px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+
+        @media screen and (min-width:768px) {
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width:1200px) {
+            margin-bottom: 50px;
+        }
     }
 
     &__btn {
@@ -18,8 +32,7 @@
         line-height: calc(26 /16);
         letter-spacing: 0.03em;
         background-color: $light-background;
-        height: 38px;
-        width: 125px;
+        padding: 6px 22px;
         transition: color $standart-trans, background $standart-trans, box-shadow $standart-trans;
     
         &:hover, &:focus {

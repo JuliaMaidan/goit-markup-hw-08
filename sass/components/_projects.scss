@@ -2,8 +2,17 @@
     gap: 30px;
 
     &__item {
-        flex-basis: 370px;
-        width: calc((100% - 2 * 30px) / 3);
+        flex-basis: 450px;
+
+        @media screen and (min-width:768px) {
+            flex-basis: 354px;
+            width: calc((100% - 1 * 30px) / 2);
+        }
+
+        @media screen and (min-width:1200px) {
+            flex-basis: 370px;
+            width: calc((100% - 2 * 30px) / 3);
+        }
     }
 
     &__link {
