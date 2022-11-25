@@ -55,7 +55,7 @@
     display: block;
     margin-bottom: auto;
 
-    &__item:not(last-child) {
+    &__item:not(:last-child) {
         margin-bottom: 35px;
     }
 
@@ -78,7 +78,7 @@
     display: block;
     margin-bottom: 64px;
 
-    &__item:not(last-child) {
+    &__item:not(:last-child) {
         margin-bottom: 32px;
     }
 
@@ -97,12 +97,10 @@
     }
 }
 
-
-
 .mobile-socials {
     gap: 10px;
 
-    &__item:not(last-child) {
+    &__item:not(:last-child) {
         padding-right: 10px;
         border-right: 1px solid rgba(33, 33, 33, 0.2);
     }

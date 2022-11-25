@@ -100,12 +100,21 @@ img {
   }
 }
 .header__box {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .header__box {
+    width: 1200px;
+  }
 }
 .header__logo {
   font-family: "Raleway";
@@ -207,9 +216,14 @@ img {
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
   padding-top: 32px;
-  padding-bottom: 31px;
+  padding-bottom: 32px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .nav__link {
+    padding-bottom: 31px;
+  }
 }
 .nav__link--current {
   color: #2196F3;
@@ -297,7 +311,7 @@ img {
   display: block;
   margin-bottom: auto;
 }
-.mobile-menu__item:not(last-child) {
+.mobile-menu__item:not(:last-child) {
   margin-bottom: 35px;
 }
 .mobile-menu__link {
@@ -316,7 +330,7 @@ img {
   display: block;
   margin-bottom: 64px;
 }
-.mobile-contacts__item:not(last-child) {
+.mobile-contacts__item:not(:last-child) {
   margin-bottom: 32px;
 }
 .mobile-contacts__link {
@@ -335,7 +349,7 @@ img {
 .mobile-socials {
   gap: 10px;
 }
-.mobile-socials__item:not(last-child) {
+.mobile-socials__item:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
@@ -793,6 +807,11 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .subscribe {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscribe {
     margin-left: auto;
@@ -815,7 +834,7 @@ img {
   }
 }
 .subscribe__field {
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1216,23 +1235,23 @@ img {
           transform: translateY(0);
 }
 
-.header__box, .hero-box, .features-box, .activity-box, .team-box, .clients-box, .footer-box, .filters-box {
+.hero-box, .features-box, .activity-box, .team-box, .clients-box, .footer-box, .filters-box {
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
 }
 @media screen and (min-width: 480px) {
-  .header__box, .hero-box, .features-box, .activity-box, .team-box, .clients-box, .footer-box, .filters-box {
+  .hero-box, .features-box, .activity-box, .team-box, .clients-box, .footer-box, .filters-box {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .header__box, .hero-box, .features-box, .activity-box, .team-box, .clients-box, .footer-box, .filters-box {
+  .hero-box, .features-box, .activity-box, .team-box, .clients-box, .footer-box, .filters-box {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .header__box, .hero-box, .features-box, .activity-box, .team-box, .clients-box, .footer-box, .filters-box {
+  .hero-box, .features-box, .activity-box, .team-box, .clients-box, .footer-box, .filters-box {
     width: 1200px;
   }
 }
