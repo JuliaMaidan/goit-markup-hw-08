@@ -16,11 +16,11 @@
         line-height: calc(16 / 14);
         letter-spacing: 0.02em;
         padding-top: 32px;
-        padding-bottom: 32px;
+        padding-bottom: 34px;
         transition: color $standart-trans;
 
         @media screen and (min-width: 1200px) {
-            padding-bottom: 31px;
+            padding-bottom: 33px;
         }
 
         &--current {
