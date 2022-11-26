@@ -932,13 +932,13 @@ img {
 }
 @media screen and (min-width: 480px) {
   .modal {
-    max-width: 450px;
+    width: 450px;
     min-height: 581px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    max-width: 528px;
+    width: 528px;
     min-height: 581px;
   }
 }
