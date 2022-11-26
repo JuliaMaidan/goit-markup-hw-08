@@ -30,6 +30,11 @@
     &__img {
         display: block;
         margin-bottom: 30px;
+
+        @media screen and (max-width: 479px) {
+            margin-right: auto;
+            margin-left: auto;
+        }
     }
 
     &__member {
