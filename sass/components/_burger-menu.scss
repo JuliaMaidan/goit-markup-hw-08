@@ -90,6 +90,9 @@
         color: $gray;
 
         &.accent {
+            @media screen and (max-width: 480px) {
+                font-size: 27px;
+            }
             font-size: 34px;
             line-height: calc(40 / 34);
             color: $active-color;
@@ -98,6 +101,10 @@
 }
 
 .mobile-socials {
+    @media screen and (max-width: 480px) {
+        gap: 40px;
+    }
+
     gap: 10px;
 
     &__item:not(:last-child) {

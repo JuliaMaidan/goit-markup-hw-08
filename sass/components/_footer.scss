@@ -1,6 +1,6 @@
 .footer {
     background-color: $background-color;
-    padding: 60px 15px;
+    padding: 60px 0;
 
     &-box {
         @extend %container;
@@ -89,9 +89,12 @@
         font-size: 14px;
         line-height: calc(24 / 14);
         letter-spacing: 0.03em;
-        color: $white;
-        @extend %mail_phone;
+        color: rgba(255, 255, 255, 0.6);
         transition: color $standart-trans;
+
+        &.location {
+            color: $white;
+        }
 
         &:hover,
         &:focus {
