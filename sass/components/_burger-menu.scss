@@ -90,7 +90,7 @@
         color: $gray;
 
         &.accent {
-            @media screen and (max-width: 480px) {
+            @media screen and (max-width: 479px) {
                 font-size: 27px;
             }
             font-size: 34px;
@@ -101,7 +101,7 @@
 }
 
 .mobile-socials {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 479px) {
         gap: 40px;
     }
 
