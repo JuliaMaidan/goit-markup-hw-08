@@ -33,7 +33,7 @@
         display: block;
 
         @media screen and (max-width:767px) {
-            max-width: 450px;
+            width: 450px;
         }
     }
 
@@ -45,10 +45,14 @@
     }
 
     &__title {
-        font-size: 18px;
+        font-size: 17px;
         line-height: calc(36 / 18);
         letter-spacing: 0.06em;
         margin-bottom: 4px;
+
+        @media screen and (min-width:1280px) {
+            font-size: 18px;
+        }
     }
 
     &__area {
