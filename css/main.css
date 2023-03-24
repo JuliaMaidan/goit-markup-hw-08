@@ -1239,7 +1239,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .projects__img {
-    max-width: 450px;
+    width: 450px;
   }
 }
 .projects__desc {
@@ -1249,10 +1249,15 @@ img {
   padding: 20px 20px 24px;
 }
 .projects__title {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+}
+@media screen and (min-width: 1280px) {
+  .projects__title {
+    font-size: 18px;
+  }
 }
 .projects__area {
   line-height: 1.875;
